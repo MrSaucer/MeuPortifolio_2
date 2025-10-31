@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TechNova Vendas de eletronicos ponta de linha">
+  <title>Front-end com Bootstrap</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body class="bg-primary-subtle">
+
+  <header>
+    <nav class="navbar navbar-expand-lg bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand text-light fs-1 fw-bold" href="#">TechNova</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="bi-three-dots-vertical text-light"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light fs-5" href="produtos.html" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Produtos
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Eletrônicos</a></li>
+                <li><a class="dropdown-item" href="#">Periféricos</a></li>
+                <li><a class="dropdown-item" href="#">Acessórios</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5" href="sobrenos.html">Sobre Nós</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light fs-5" href="contato.html">Contato</a>
+            </li>
+          </ul>
+
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+            <button class="btn btn-outline-light text-light" type="submit">Search</button>
+          </form>
+
+          <button class="btn btn-light mx-2" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#loginOffcanvas" aria-controls="loginOffcanvas">
+            Login/SignUp
+          </button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="container my-4">
+    <h1 class="text-center my-4">Nossos Produtos</h1>
+
+    <div class="row">
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://www.havan.com.br/media/catalog/product/c/e/celular-smartphone-galaxy-a06-4g-octa-core-4gb-ram-128gb_1046066.jpg"
+            class="card-img-top" alt="Smartphone">
+          <div class="card-body">
+            <h5 class="card-title">Celular Smartphone Galaxy A06 4G Octa Core 4Gb Ram 128Gb</h5>
+            <p class="card-text">R$ 749,90</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://lojagoldentec.vteximg.com.br/arquivos/ids/165902-1000-1000/image-cff5e7dc880d4c21bb11ed10984a894b.jpg?v=638483534503930000"
+            class="card-img-top" alt="Cadeira Gamer">
+          <div class="card-body">
+            <h5 class="card-title">Cadeira Gamer Goldentec GT Neptune</h5>
+            <p class="card-text">R$ 699,90</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjxTbyvhVUdefdN-kyCXsiqilkzkW4vdJ40A&s"
+            class="card-img-top" alt="PC Gamer">
+          <div class="card-body">
+            <h5 class="card-title">Pc Gamer Completo Ryzen 5 5600GT, 16GB 3200mhz</h5>
+            <p class="card-text">R$ 3.977,16</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <img
+            src="https://images.tcdn.com.br/img/img_prod/1087072/relogio_smartwatch_x_watch_preto_com_alexa_1460_1_acdfd0a488affed854938b88c640670c.jpg"
+            class="card-img-top" alt="Smartwatch">
+          <div class="card-body">
+            <h5 class="card-title">Relógio Smartwatch X-Watch XSWUQPI001A</h5>
+            <p class="card-text">R$ 299,99</p>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal">
+              Comprar
+            </button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer class="bg-primary">
+    <br>
+    <p class="text-light text-center fs-2 fw-bold">FAQ</p>
+
+    <div class="accordion mx-4" id="faqAccordion">
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+            aria-expanded="true" aria-controls="collapseOne">
+            Quais são as formas de pagamento?
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <strong>Aceitamos as principais formas de pagamento:</strong>
+            <ul>
+              <li>Cartão de Crédito (Visa, Mastercard, Elo) em até 12x.</li>
+              <li>PIX (com 5% de desconto).</li>
+              <li>Boleto Bancário.</li>
+            </ul>
+            Seus dados estão 100% seguros conosco.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+            aria-expanded="false" aria-controls="collapseTwo">
+            Qual o prazo de entrega e o valor do frete?
+          </button>
+        </h2>
+        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            O prazo de entrega e o valor do frete variam de acordo com a sua localização (CEP) e a modalidade de envio
+            escolhida (PAC, Sedex, Transportadora). Você pode simular o prazo e o custo exatos diretamente na página do
+            produto ou no seu carrinho de compras antes de finalizar o pedido.
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+            Como funciona a garantia e a política de trocas?
+          </button>
+        </h2>
+        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            Todos os produtos vendidos pela <strong>TechNova</strong> possuem garantia de fábrica (geralmente 12 meses).
+            Além disso, você tem o direito de arrependimento de 7 dias corridos após o recebimento para solicitar a
+            troca ou devolução do produto, desde que ele esteja em sua embalagem original e sem sinais de uso.
+          </div>
+        </div>
+      </div>
+    </div>
+    <br>
+  </footer>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="loginOffcanvas" aria-labelledby="loginOffcanvasLabel">
+    <div class="offcanvas-header bg-primary text-light">
+      <h5 class="offcanvas-title" id="loginOffcanvasLabel">LOGIN</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form>
+        <div class="mb-3">
+          <label for="emailInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailInput" placeholder="Digite seu email">
+        </div>
+        <div class="mb-3">
+          <label for="passwordInput" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="passwordInput" placeholder="Digite sua senha">
+        </div>
+        <button type="submit" class="btn btn-primary w-100 mb-3" id="btnLogin">Entrar</button>
+      </form>
+      <hr>
+      <p>Não possui uma conta?</p>
+      <a class="text-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#cadastro"
+        aria-controls="cadastro">
+        Cadastre-se agora
+      </a>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cadastro" aria-labelledby="cadastroOffcanvasLabel">
+    <div class="offcanvas-header bg-primary text-light">
+      <h5 class="offcanvas-title" id="cadastroOffcanvasLabel">SIGN UP</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <form>
+        <div class="mb-3">
+          <label for="nameInput" class="form-label">Nome</label>
+          <input type="text" class="form-control" id="nameInput" placeholder="Digite seu nome">
+        </div>
+        <div class="mb-3">
+          <label for="emailRegInput" class="form-label">Email</label>
+          <input type="email" class="form-control" id="emailRegInput" placeholder="Digite seu email">
+        </div>
+        <div class="mb-3">
+          <label for="passwordRegInput" class="form-label">Senha</label>
+          <input type="password" class="form-control" id="passwordRegInput" placeholder="Digite sua senha">
+        </div>
+        <button type="submit" class="btn btn-success w-100" id="btnCadastro">Cadastrar</button>
+      </form>
+    </div>
+  </div>
+
+  <div class="modal fade" id="modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Carrinho atualizado</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Produto adicionado no carrinho com sucesso!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+
+    <div id="registerToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-success text-white">
+        <i class="bi-person-check-fill me-2"></i>
+        <strong class="me-auto">Cadastro Realizado</strong>
+        <small>Agora</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Sua conta foi criada com sucesso!
+      </div>
+    </div>
+
+    <div id="loginToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-primary text-white">
+        <i class="bi-box-arrow-in-right me-2"></i>
+        <strong class="me-auto">Login Efetuado</strong>
+        <small>Agora</small>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        Bem-vindo(a) de volta!
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    // --- SCRIPT DOS TOASTS E OFFCANVAS ---
+
+    // 1. Seleciona os elementos HTML (Toasts, Botões e Offcanvases)
+    const registerToastEl = document.getElementById('registerToast');
+    const loginToastEl = document.getElementById('loginToast');
+    const registerButton = document.getElementById('btnCadastro');
+    const loginButton = document.getElementById('btnLogin');
+    const loginOffcanvasEl = document.getElementById('loginOffcanvas');
+    const cadastroOffcanvasEl = document.getElementById('cadastro');
+
+    // 2. Cria as "instâncias" dos componentes do Bootstrap
+    // Isso nos permite controlar os componentes via JavaScript (ex: .show(), .hide())
+    const registerToast = new bootstrap.Toast(registerToastEl);
+    const loginToast = new bootstrap.Toast(loginToastEl);
+    const loginOffcanvas = new bootstrap.Offcanvas(loginOffcanvasEl);
+    const cadastroOffcanvas = new bootstrap.Offcanvas(cadastroOffcanvasEl);
+
+    // 3. Adiciona um "escutador de eventos" (EventListener) para o clique no botão de CADASTRO
+    registerButton.addEventListener('click', (event) => {
+      // Previne o comportamento padrão do formulário (que é recarregar a página)
+      event.preventDefault();
+
+      // (Melhoria): Fecha o menu offcanvas de cadastro
+      cadastroOffcanvas.hide();
+
+      // Mostra o toast de sucesso
+      registerToast.show();
+    });
+
+    // 4. Adiciona um "escutador de eventos" (EventListener) para o clique no botão de LOGIN
+    loginButton.addEventListener('click', (event) => {
+      // Previne o comportamento padrão do formulário
+      event.preventDefault();
+
+      // (Melhoria): Fecha o menu offcanvas de login
+      loginOffcanvas.hide();
+
+      // Mostra o toast de sucesso
+      loginToast.show();
+    });
+  </script>
+</body>
+
+</html>
